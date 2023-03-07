@@ -1,4 +1,4 @@
-#Rotating an array left
+# Rotating an array left
 
 Rotating an array to the left means to shift every element in the array to the left a certain number of places.
 To illustrate, take a look at the following example:
