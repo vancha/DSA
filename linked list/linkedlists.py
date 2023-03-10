@@ -8,6 +8,12 @@ class ListNode:
     self.next = next
     
 #doubly linked list
+#this doubly linked list is implemented like it is for a lot of the problems on leetcode. it consists of elements that have only one value and two pointers: one to the next element in the list, and one to the previous element in the list
+class Node:
+    def __init__(self, val, prev, next, child):
+        self.val = val
+        self.prev = prev
+        self.next = next
 #circular linked list
 #circular singly linked list
 #circular doubly linked list
