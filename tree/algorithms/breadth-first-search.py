@@ -13,7 +13,7 @@ while there are elements in the queue:
 '''
 
 #the bfs function takes the root of a tree as an input
-def BFS(root):
+def BFS(root, value):
     #we create a queue and add the root of the tree to it.
     queue = deque()
     queue.appendleft(root)
@@ -24,6 +24,8 @@ def BFS(root):
         u = queue.pop()
         #if it hadn't already been marked as visited
         if u not in visited:
+            if u.val == value:
+                return True
             #mark it as visited now (and print it if you want)
             visited[u] = True
             #get it's left and right children
@@ -34,6 +36,7 @@ def BFS(root):
                 queue.appendleft(left)
             if right and right not in visited:
                 queue.appendleft(right)
+    return False
 
 '''
 usage of the breadth first search algorightm:
