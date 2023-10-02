@@ -34,3 +34,17 @@ def BFS(root):
                 queue.appendleft(left)
             if right and right not in visited:
                 queue.appendleft(right)
+
+'''
+usage of the breadth first search algorightm:
+'''
+#creates a tree, with 1 as the root node, 2 as it's left node, and 3 as it's right node
+root = TreeNode(val=1, left=TreeNode(left=None,right=None,val= 2),right=TreeNode(left=None,right=None,val=3))
+
+#check if a certain value is in the search tree
+if BFS(root, 9):
+    #print found if it is
+    print('found item')
+else:
+    #print not found if it is not
+    print('did not find item')
