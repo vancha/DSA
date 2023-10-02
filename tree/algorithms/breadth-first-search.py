@@ -13,7 +13,7 @@ while there are elements in the queue:
 '''
 
 #the bfs function takes the root of a tree as an input
-def BFS(root, value):
+def breadth_first_search(root, value):
     #we create a queue and add the root of the tree to it.
     queue = deque()
     queue.appendleft(root)
@@ -45,7 +45,7 @@ usage of the breadth first search algorightm:
 root = TreeNode(val=1, left=TreeNode(left=None,right=None,val= 2),right=TreeNode(left=None,right=None,val=3))
 
 #check if a certain value is in the search tree
-if BFS(root, 9):
+if breadth_first_search(root, 9):
     #print found if it is
     print('found item')
 else:
